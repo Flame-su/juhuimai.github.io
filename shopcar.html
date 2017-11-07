@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/shopcar.css" />
+		<style>
+			.nav{
+				width:1020px;
+				margin:0 auto;
+				height:160px;
+				padding:10px 0;
+			}
+			.nav>a{
+				float:left
+			}
+			.nav>ul{
+				width:700px;
+				padding: 10px 0 20px;
+				float:left
+			}
+			.nav>ul li{
+				float:left;
+				text-align: center;
+				width:140px;
+				padding:3px 0;
+				font-weight:700
+			}
+			.nav>ul li div{
+				margin-top:10px;
+				color: #fff;
+			    font-size: 18px;
+			    height: 34px;
+			    line-height: 34px;
+				background:url("img/T1Usl8FnRfXXcVlxZa-734-340.png") no-repeat scroll 50% -102px rgba(0, 0, 0, 0);
+			}
+			.nav>ul li:nth-child(1) div{
+				background-position: 50% -204px;
+			}
+			.nav>ul li:nth-last-child(1) div{
+				background-position: 50% -136px;
+			}
+			.content{
+				width:100%;
+				background:#F9F9F9;
+				
+			}
+			.content_nav{
+				width: 990px;
+			    border: 1px solid #ddd;
+			    height:35px;
+			    background: #fff;
+			    margin: 0 auto;
+			}
+			.content_nav li{
+				float:left;
+				text-align:center;
+				line-height:35px
+			}
+			.content_nav li input{
+				vertical-align:middle;
+			}
+			
+			.content_nav li:nth-child(1){
+				width:8%
+			}
+			.content_nav li:nth-child(2){
+				width:37%
+			}
+			.content_nav li:nth-child(3){
+				width:15%
+			}
+			.content_nav li:nth-child(4){
+				width:15%
+			}
+			.content_nav li:nth-child(5){
+				width:15%
+			}
+			.content_nav li:nth-child(6){
+				width:10%
+			}
+			.content_box{
+				border: 1px solid #ddd;
+			    min-height:35px;
+			    background: #fff;
+			    margin: 0 auto;
+				width: 990px;
+			}
+			.content form{
+				border: 1px solid #ddd;
+			    height:42px;
+			    background: #fff;
+			    margin: 0 auto;
+				width: 990px;
+				padding:10px 0
+			}
+			.content form li{
+				float:left
+			}
+			.again{
+				display: block;
+			    text-align: center;
+			    font-size: 15px;
+			    margin-left: 15px;
+			    width: 140px;
+			    height: 40px;
+			    line-height: 40px;
+			    background: #fafafa;
+			    border: 1px solid #d9d9d9;
+			}
+			.clear1{
+				display:block;
+				width:80px;
+				color: #aaaaaa;
+			    margin-right: 10px;
+			    float:left;
+			    line-height: 42px;
+   				 margin-left: 30px;
+			}
+			.content form p{
+				float:left;
+				line-height: 42px;
+				margin-left:250px
+			}
+			.content form p span{
+				font-size: 16px;
+    			font-weight: bold;
+    			color: #E31939;
+			}
+			.all{
+				float:right;
+				display: block;
+			    text-align: center;
+			    text-decoration: none;
+			    font-size: 17px;
+			    width: 150px;
+			    height: 40px;
+			    line-height: 40px;
+			    background: #E31939;
+			    margin-right: 25px;
+			    margin-left: 20px;
+			    color:#fff;
+			}
+			.content_box ul{
+				height:96px;
+				line-height:98px;	
+				border-bottom:1px solid #ddd
+			}
+			.content_box ul li{
+				float:left;
+				text-align:center
+				
+			}
+			.content_box img{
+				width:60px;
+				height:60px;
+				float:left;
+				margin:20px 20px 0;
+				
+			}
+			.content_box p{
+				float: left;
+			    
+			    text-align: left;
+			    font-size: 12px;
+			}
+			.content_box ul li span{
+				line-height:96px;	
+				font-size: 14px;    
+				font-weight: bold;
+   				color: rgb(227, 25, 57);
+			}
+			.content_box input{
+				margin-left:-20px;
+			}
+			.content_box li:nth-child(1){
+				width:8%;
+				
+			}
+			.content_box li:nth-child(2){
+				width:37%
+			}
+			.content_box li:nth-child(3){
+				width:15%;
+				height: 50px;
+    			padding-top: 40px;
+			}
+			.content_box li:nth-child(4){
+				width:15%
+			}
+			.content_box li:nth-child(5){
+				width:15%
+			}
+			.content_box li:nth-child(6){
+				width:10%
+			}
+			.minus,.add{
+				width: 15px;
+				text-align:center;
+				border:1px solid #999;
+			    line-height: 15px;
+			    height: 15px;
+			    float: left;
+			    margin-top: 3px;
+			    margin:0 5px
+			}
+			#txt{
+				margin:0;
+				float: left;
+			    width: 38px;
+			    height: 19px;
+			    margin-top: -4px;
+			    text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+	<!--头部-->
+	<div class="header">
+			<div class="header_bg">
+				<p>欢迎光临本店!</p>
+				<a href="log on.html">请登录</a>
+				<a href="">免费注册</a>
+				<ul>
+					<li class="nv">
+						<a href="">
+							我的信息
+							<span></span>
+						</a>
+						
+						<div class="my_news">
+							<a href="">已买到的宝贝</a>
+							<a href="">我的地址管理</a>
+						</div>
+					</li>
+					<li><a href="">我关注的店铺</a></li>
+					<li><a href="">购物车</a></li>
+					<li class="nv">
+						<a href="">收藏夹</a>
+						<span></span>
+						<div class="my_cowry">
+							<a href="">收藏的宝贝</a>
+							<a href="">收藏的店铺</a>
+						</div>
+					</li>
+					<li class="nv">	
+						<a href="">手机版</a>
+						<span></span>
+						<div><img src="img/app.jpg" alt=""  class="app"/></div>
+					</li>
+					<li class="nv">
+						<a href="">商家支持</a>
+						<span></span>
+					</li>
+					<li class="nv">
+						<a href="">网站导航</a>
+						<span></span>
+					</li>
+				</ul>
+				
+			</div>
+		</div>	
+	
+	<!--右侧固定导航-->
+	<div class="aside">
+			<div class="tx">
+				<img src="img/user_head.png" alt="" />
+			</div>
+			
+			<form action="#" method="get">
+				<legend><b>请登录</b><span>还没有账号？</span><a href="#">立即注册</a></legend>
+				<div class="form_box">
+					<span>账号</span><input type="text" class="form_txt"/><br />
+					<span>密码</span><input type="text" class="form_txt"/><br />
+					<ul>
+						<input type="checkbox"/>
+						记住密码 
+						<a href="#">忘记密码？</a><br />
+					</ul>
+					
+					<input type="button" value="立即登录"/>
+				</div>
+			</form>			
+			<div class="onload">
+				<div class="aside_txt"> &nbsp在 线 <br />
+					 	  销 售 </div>
+			</div>
+			<div class="onload_box">
+				<h3>在线销售顾问</h3>
+				<ul>
+					<li><img src="img/web_logo.png" alt="" /><a href="#">在线客服</a></li>
+					<li><img src="img/qq1.gif" alt="" /><a href="#">在线客服</a></li>
+				</ul>
+			</div>
+			<div class="aside_box aside_examine">
+				<div class="aside_bg examine_bg">
+				</div>
+				<div class="aside_txt">在线<br />
+					 	 调查</div>
+			</div>
+			<div class="examine_box">
+				
+			</div>
+			<div class="aside_shop">
+				<div class="shop_bg">
+				</div>
+				<div class="shop_txt">
+					<br />购<br />物<br />车<br /><br />
+					<span>0</span>
+				</div>
+			</div>
+			<div class="aside_box aside_follow">
+				<div class="aside_bg follow_bg">
+				</div>
+				<div class="aside_txt">关注<br />
+					 	 收藏</div>
+			</div>
+			<div class="aside_box aside_collect">
+				<div class="aside_bg collect_bg">
+				</div>
+				<div class="aside_txt">收藏<br />
+					 	 商品</div>
+			</div>
+		
+			<div class="aside_box aside_app">
+				<div class="aside_bg app_bg">
+				</div>
+				<div class="aside_txt">官方<br />
+					 	 微信</div>
+			</div>
+			<div class="app2">
+					<img src="img/app.jpg" alt="" />
+					<p>扫码赢好礼</p>
+			</div>
+			
+			<div class="aside_box top">
+				<div class="aside_bg top_bg">
+				</div>
+				<div class="aside_txt">回到<br />
+					  顶部</div>
+			</div>
+		</div>
+	<!--logo     -->
+	<div class="nav">
+		<a href="index.html"><img src="img/logo.jpg" alt="" /></a>
+		<ul>
+			<li>
+				<p>查看购物车</p>
+				<div></div>
+			</li>
+			<li>
+				<p>拍下商品</p>
+				<div>2</div>
+			</li>
+			<li>
+				<p>付款</p>
+				<div>3</div>
+			</li>
+			<li>
+				<p>确认收货</p>
+				<div>4</div>
+			</li>
+			<li>
+				<p>评价</p>
+				<div>5</div>
+			</li>
+		</ul>
+	</div>
+	<!--购物车内容-->
+	<div class="content">
+		<div class="content_nav">
+			<li><input type="checkbox" class="allcheck" checked="checked"/>全选</li>
+			<li>产品</li>
+			<li>数量</li>
+			<li>本店价格</li>
+			<li>小计</li>
+			<li>操作</li>
+		</div>
+		<div class="content_box"> 
+		</div>
+		<form action="">
+			<li><a href="index.html" class="again">继续购物</a></li>
+			<a href="#" class="clear1">清空购物车</a>
+			<p>应付金额：<span class="all_price">0.00</span>，比市场价0.00节省了</p>
+			<a href="#" class="all">去结算</a>
+		</form>
+	</div>
+	<!-------------------------版权----------------------------------->	
+	<div class="foot">
+		<div class="foot_top">
+			<p>友情链接:</p>
+			<a href="#">邢台亿搜人才网</a>
+			<a href="#">邯郸中小企业网</a>
+			<a href="#">亿搜人才网</a>
+			<a href="#">众贤服务网</a>
+			<a href="#">快递查询</a>
+		</div>
+		<ul>
+			<li><a href="">关于我们</a></li>
+			<li><a href="">管理团队</a></li>
+			<li><a href="">商家入驻</a></li>
+			<li><a href="">媒体报道</a></li>
+			<li><a href="">站点地图</a></li>
+			<li><a href="">招贤纳士</a></li>
+			<li><a href="">帮助中心</a></li>
+			<p>ICP备案证书号:<a href="">冀ICP备14019346号-1</a></p>
+			
+		</ul>
+	</div>
+	</body>
+</html>
+	<script src="jquery-1.11.1.min.js"></script>
+	<script src="js/shopcar.js"></script>
+	<script src="cookie.js"></script>
+	<script>
+		
+	</script>

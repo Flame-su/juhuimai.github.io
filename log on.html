@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/log on.css" />
+		<style >
+			.header a{
+				float:left
+			}
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			<a href="index.html"><img src="img/logo.jpg" alt="" /></a>
+			<div class="welcome">欢迎登录</div>
+			<li></li>
+			<li></li>
+			<li></li>
+		</div>
+		<div class="content">
+			<div class="content_left">
+				<img src="img/loginPic.jpg" alt="" />
+			</div>
+			<div class="content_right">
+				<h2><span>还没有账号？<a href="enroll.html">立即注册</a></span></h2>
+				<form action="">
+					<h3>账号名</h3>
+					<input type="text" placeholder="手机号/用户名/邮箱" class="form_txt"/>
+					<h3>密码</h3>
+					<input type="password" class="form_txt"/>
+					<ul>
+						<input type="checkbox"/>
+						请保存我这次的登录信息。 
+						<a href="#">忘记密码？</a><br />
+					</ul>
+				<input type="button" class="btn" value="立即登录"/>
+				<div class="nav">
+					<li><a href="">微信</a></li>
+					<li><a href="">QQ</a></li>
+					<li><a href="">新浪</a></li>
+					<li class="last"><a href="" width="">支付宝</a></li>
+				</div>
+				</form>
+			</div>
+		</div>
+		<div class="foot">
+			
+		</div>
+	</body>
+</html>
+<script src="jquery-1.11.1.min.js"></script>
+<script src="js/log on.js"></script>
+<script>
+	$(".foot").load("index.html .foot")
+</script>	
+<script>
+ 
+</script>

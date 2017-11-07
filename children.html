@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/children.css" />
+		<style>
+			.content{
+				width:1190px;
+				height:550px;
+				margin:0 auto
+			}
+			.content_nav{
+				height:20px;
+				padding:10px 0;
+				padding-left:20px
+			}
+			.content_left{
+				float:left
+			}
+			.content_pic{
+				padding: 10px;
+    			width: 380px;
+    			height:380px;
+    			border: 1px solid #DDD;
+			}
+			.content_pic img{
+				width:380px;
+				height:380px;
+				box-sizing: border-box;
+				border:1px solid #DDD
+			}
+			.content_middle{
+				float:left;
+				padding:0 15px 0 20px
+			}
+			.content_middle p{
+				width: 550px;
+			    height: 40px;
+			    line-height: 40px;
+			    font-size: 16px;
+			    font-weight: 500;
+			    overflow: hidden;
+			    color: #3C3C3C;
+			    margin-left: 5px;
+			}
+			.content_middle h3{
+				color: #999;
+    			margin-left: 5px;
+			}
+			.content_center{
+				background: #F5F5F5;
+			    margin: 10px 0px;
+			    padding: 6px 15px;
+			    z-index: 2;
+			    height:61px;
+			    position: relative;
+			}
+			.content_center li{
+				
+				height: 35px;
+    			line-height: 35px;
+			}
+			.content_center p{
+				
+			}
+			.content_center h1{
+				margin-left: 14px;
+			    font-size: 30px;
+			    color: #f52648;
+			    width: 50px;
+			    display: inline-block;
+			}
+			.content_center a{
+				display: inline-block;
+			    width: 60px;
+			    color:#fff;
+			    text-align: center;
+			    background: #FE596A;
+			    height: 20px;
+			    line-height: 20px;
+			    margin-left: 50px;
+			}
+			.content_center h4{
+				display:inline-block;
+			    font-weight: normal;
+			    text-decoration: line-through;
+			    margin-left: 10px;
+			    margin-right: 50px;
+			}
+			.content_1 {
+				width:530px;
+				height:40px;
+				font-size:12px
+			}
+			.content_1 p{
+				line-height:40px;
+				color:#999;
+				font-size:14px
+			}
+			.content_1 span{
+				display:inline-block;
+				margin:0 70px 0 50px;
+				color:#000
+			}
+			.content_middle>ul{
+				height: 25px;
+			    display: block;
+			    border-top: 1px #e5dfda dotted;
+			    border-bottom: 1px #e5dfda dotted;
+			    padding: 10px 0px;
+			    text-align:center
+			}
+			.content_middle>ul li{
+				height: 25px;
+			    line-height: 25px;
+			    color: #999999;
+				float:left;
+				width:33%;
+				border-right: 1px #e5dfda dotted;
+			}
+			.content_middle>ul li span{
+				color:red;
+				margin-left:5px
+			}
+			.content_middle>ul li:nth-last-child(1){
+				border:none
+			}
+			.content_2{
+				height:40px;
+				line-height:40px
+			}
+			.content_2 p{
+				float: left;
+			    width: 55px;
+			    color: #999;
+			    font-size:12px;
+			    margin-right:15px
+			}
+			.content_2 a{
+				float:left;
+				width:80px;
+				height:30px;
+				margin-top:4px;
+				text-align: center;
+				border:1px solid #999;
+				line-height:30px
+			}
+			.content_2 a:nth-last-child(1){
+				border-left:none
+			}
+			
+			.content_3{
+				height:40px;
+				line-height:40px
+			}
+			.content_3 p{
+				float: left;
+			    width: 55px;
+			    color: #999;
+			    font-size:12px
+			}
+			.content_3 ul{
+				float: left;
+			    width: 100px;
+			    height:20px;
+			    line-height:40px;
+			    padding:10px
+			}
+			.content_3 ul li{
+				width: 15px;
+				text-align:center;
+				border:1px solid #999;
+			    line-height: 15px;
+			    height: 15px;
+			    float: left;
+			    margin-top: 3px;
+			    margin:0 5px
+			}
+			.content_3 input{
+				float: left;
+			    width: 38px;
+			    height: 19px;
+			    margin-top: -4px;
+			    text-align: center;
+			}
+			.content_4 input{
+				float:left;
+				width:135px;
+				height:36px;
+				line-height:36px;
+				color:#fff;
+				float: left;
+			    cursor: pointer;
+			    background: #FF6500;
+			    margin-right: 15px;
+			    border:none
+			}
+			.content_4 input:nth-child(2){
+				background:#E31939;
+			}
+			.content_4 a{
+				margin-right:15px;
+				display:inline-block;
+				padding:0 20px;
+				border:1px solid #999;
+				height:34px;
+				line-height:36px
+			}
+			.content_right{
+				float:right;
+				width: 175px;
+			    border: 1px solid #DDD;
+			    padding: 0px 10px 5px;
+			    background: #F9F9F9
+			}
+			.content_right h3{
+				font-weight:normal;
+				font-size:13px;
+				border-bottom: 1px solid #ddd;
+			    padding-bottom: 5px;
+			    text-align: center;
+			    padding-top: 13px;
+			    padding-bottom: 12px;
+			}
+			.content_right>p{
+				padding: 8px 0 11px 10px;
+   				 background: url(img/red_line.png) no-repeat right 5px;
+			}
+			.content_right ul{
+				overflow: hidden;
+			    padding: 5px 0;
+			    margin-right: 5px;
+			    border-top: 1px dotted #c6c6c6;
+			    border-bottom: 1px dotted #c6c6c6;
+			}
+			.content_right ul li{
+				width: 56px;
+			    float: left;
+			    text-align: center;
+			    border-right: 1px dotted #c6c6c6;
+			}
+			.content_right ul li:nth-last-child(1){
+				border-right:none
+			}
+			.content_right ul li span{
+				display:block;
+				
+			}
+			.content_right ul li p{
+				padding:5px 0;
+				text-align:center;
+				background:none;
+				color: #fe596a;
+			}
+			.talk{
+				border-bottom: 1px dotted #c6c6c6;
+				 padding: 5px 0;
+			    margin-right: 5px;
+			    padding-left:10px
+			}
+			.talk p{
+				padding: 6px 0 6px 10px;
+			}
+			.talk p:nth-child(2){
+				background:url("img/button_old_41.gif") no-repeat 70px 5px
+			}
+			.talk span{
+				margin-left:10px
+			}
+			.content_right a{
+				border: 1px solid #F52648;
+				margin-top:20px;
+				display: block;
+			    color: #F52648;
+			    line-height: 31px;
+			    height: 31px;
+			    text-align: center;
+			    float:left;
+			    padding-left: 23px;
+			    width: 57px;
+			    background-position: -146px 7px;
+			   margin-left: 5px;
+			   margin-bottom:20px;
+			   background:url("img/ghs.png") no-repeat;
+			   background-position:-146px 7px;
+			}
+			.sao p{
+				padding-top:5px;
+				text-align:center
+			}
+			.sao img{
+				width:120px;
+				height:120px;
+				text-align: center;
+			    display: inline-block;
+			    margin-top: 10px;
+			    margin-left: 27px;
+			    margin-bottom:20px
+			}
+		</style>
+	</head>
+	<body>
+			<!--头部-->
+		<div class="header">
+			<div class="header_bg">
+				<p>欢迎光临本店!</p>
+				<a href="log on.html">请登录</a>
+				<a href="">免费注册</a>
+				<ul>
+					<li class="nv">
+						<a href="">
+							我的信息
+							<span></span>
+						</a>
+						
+						<div class="my_news">
+							<a href="">已买到的宝贝</a>
+							<a href="">我的地址管理</a>
+						</div>
+					</li>
+					<li><a href="">我关注的店铺</a></li>
+					<li><a href="">购物车</a></li>
+					<li class="nv">
+						<a href="">收藏夹</a>
+						<span></span>
+						<div class="my_cowry">
+							<a href="">收藏的宝贝</a>
+							<a href="">收藏的店铺</a>
+						</div>
+					</li>
+					<li class="nv">	
+						<a href="">手机版</a>
+						<span></span>
+						<div><img src="img/app.jpg" alt=""  class="app"/></div>
+					</li>
+					<li class="nv">
+						<a href="">商家支持</a>
+						<span></span>
+					</li>
+					<li class="nv">
+						<a href="">网站导航</a>
+						<span></span>
+					</li>
+				</ul>
+				
+			</div>
+		</div>
+		<!--搜索栏-->
+		<div class="search">
+			<img src="img/logo_hd.jpg" alt="" class="logo_hd"/>
+			<img src="img/logo_right.png" alt="" class="logo_right"/>
+			<ul class="search_cowry">
+				<li class="search_bj">宝贝</li>
+				<li>店铺</li>
+			</ul>
+			<form  method="" action="" class="search_box">	
+				<input type="text" placeholder="请输入关键词"/><input type="button" value="搜索"/>
+			</form>
+			<div class="z-search"> </div>
+		</div>
+		<!--标题-->
+		<div class="nav">
+			<a href="" class="all_nav">
+				全部商品分类
+				<ul class="all_nav_box">
+					<div></div>
+				</ul>
+			
+			</a>
+			<div class="nav2">
+				
+			</div>	
+			<ul class="aside_nav">
+				<li><a href="index.html">首页</a></li>
+				<li><a href="">食品生鲜</a></li>
+				<li><a href="">店铺街</a></li>
+				<li><a href="">积分商店</a></li>
+				<li><a href="">优惠活动</a></li>
+				<li><a href="">智能扫货</a></li>
+				<li><a href="">文章资讯</a></li>
+			</ul>
+		</div>
+		<!--右侧固定导航-->
+		<div class="aside">
+			<div class="tx">
+				<img src="img/user_head.png" alt="" />
+			</div>
+			
+			<form action="#" method="get">
+				<legend><b>请登录</b><span>还没有账号？</span><a href="#">立即注册</a></legend>
+				<div class="form_box">
+					<span>账号</span><input type="text" class="form_txt"/><br />
+					<span>密码</span><input type="text" class="form_txt"/><br />
+					<ul>
+						<input type="checkbox"/>
+						记住密码 
+						<a href="#">忘记密码？</a><br />
+					</ul>
+					
+					<input type="button" value="立即登录"/>
+				</div>
+			</form>			
+			<div class="onload">
+				<div class="aside_txt"> &nbsp在 线 <br />
+					 	  销 售 </div>
+			</div>
+			<div class="onload_box">
+				<h3>在线销售顾问</h3>
+				<ul>
+					<li><img src="img/web_logo.png" alt="" /><a href="#">在线客服</a></li>
+					<li><img src="img/qq1.gif" alt="" /><a href="#">在线客服</a></li>
+				</ul>
+			</div>
+			<div class="aside_box aside_examine">
+				<div class="aside_bg examine_bg">
+				</div>
+				<div class="aside_txt">在线<br />
+					 	 调查</div>
+			</div>
+			<div class="examine_box">
+				
+			</div>
+			<div class="aside_shop">
+				<div class="shop_bg">
+				</div>
+				<div class="shop_txt">
+					<br />购<br />物<br />车<br /><br />
+					<span>0</span>
+				</div>
+			</div>
+			<div class="aside_box aside_follow">
+				<div class="aside_bg follow_bg">
+				</div>
+				<div class="aside_txt">关注<br />
+					 	 收藏</div>
+			</div>
+			<div class="aside_box aside_collect">
+				<div class="aside_bg collect_bg">
+				</div>
+				<div class="aside_txt">收藏<br />
+					 	 商品</div>
+			</div>
+		
+			<div class="aside_box aside_app">
+				<div class="aside_bg app_bg">
+				</div>
+				<div class="aside_txt">官方<br />
+					 	 微信</div>
+			</div>
+			<div class="app2">
+					<img src="img/app.jpg" alt="" />
+					<p>扫码赢好礼</p>
+			</div>
+			
+			<div class="aside_box top">
+				<div class="aside_bg top_bg">
+				</div>
+				<div class="aside_txt">回到<br />
+					  顶部</div>
+			</div>
+		</div>
+		<!--子页能容-->
+		<div class="content">
+			<div class="content_nav">
+				<a href="#">首页</a>>
+				<a href="#">视频生鲜</a>>
+				<a href="#">进口水果</a>>
+				<span></span>
+			</div>
+			<div class="content_box">
+				<div class="content_left">
+					<div class="content_pic">
+					</div>
+				</div>
+				<div class="content_middle">
+					<p></p>
+					<h3></h3>
+					<div class="content_center">
+						<li>
+							<b>售价</b>
+							<h1></h1>
+							<a href="#">降价通知</a>
+						</li>
+						<li>
+							<b>市场价</b>
+							<h4></h4>
+						</li>
+					</div>
+					<div class="content_1">
+						<p>商品货号<span>JHM2312312</span>上架时间
+						<span>2017-5-25</span>
+						</p>
+					</div>
+					<ul>
+						<li>累计评价<span>0人评价</span></li>
+						<li>累计销售<span>0</span></li>
+						<li>赠送积分<span>88</span></li>
+					</ul>
+					<div class="content_2">
+						<p>自提：</p>
+						<a href="">自提点列表</a>
+						<a href="">河北</a>
+					</div>
+					<div class="content_3">
+						<p>数量：</p>
+						<ul>
+							<li class="minus">-</li>
+							<input type="text" value="1" id="txt"/>
+							<li class="add">+</li>
+						</ul>	
+						（库存1000）
+					</div>
+					<div class="content_4">
+						<input type="button" value="立即购买"/>
+						<input type="button" value="加入购物车" class="add_shop"/>
+						<a href="#">收藏</a>
+						<a href="">去手机购买</a>
+					</div>
+				</div>
+				<div class="content_right">
+					<h3>卖家：<span>好儿女易购连锁店</span></h3>
+					<p><span>好评率</span></p>
+					<ul>
+						<li>描述<p>5.0</p></li>
+						<li>服务<p>5.0</p></li>
+						<li>物流<p>5.0</p></li>
+					</ul>
+					<div class="talk">
+						<p>商家名称 <span>好儿女	连锁店</span></p>
+						<p>Q Q 服务</p>
+						<p>客服电话 <span>0324564546</span></p>
+						<p>商家名称 <span>河北 邯郸</span></p>
+					</div>
+					<a href="#">进入店铺</a>
+					<a href="#">关注本店</a>
+					<div class="sao">
+						<p>扫一扫，手机访问店铺</p>
+						<img src="img/app.jpg" alt="" />
+					</div>
+				</div>
+			</div>
+		</div>
+	<!-------------------------售后服务----------------------------------->	
+		<div class="after-sale">
+			<div class="after-sale_nav">
+				<li><a href="">1小时快修服务</a></li>
+				<li><a href="">7天无理由退货</a></li>
+				<li><a href="">15天免费换货</a></li>
+				<li><a href="">满150元包邮</a></li>
+				<li><a href="">460余家售后网点</a></li>
+			</div>
+			<div class="after-sale_box">
+					<div class="after-sale_box_left">
+						
+					<ul>
+						<h3><a href="">关于我们</a></h3>
+						<li><a href="">隐私保护</a></li>
+						<li><a href="">隐私保护</a></li>
+						<li><a href="">隐私保护</a></li>
+						<li><a href="">隐私保护</a></li>
+						<li><a href="">隐私保护</a></li>
+						<li><a href="">隐私保护</a></li>
+					</ul>
+					<ul>
+						<h3><a href="">关于我们</a></h3>
+						<li><a href="">隐私保护</a></li>
+						<li><a href="">隐私保护</a></li>
+						<li><a href="">隐私保护</a></li>
+						<li><a href="">隐私保护</a></li>
+						<li><a href="">隐私保护</a></li>
+						<li><a href="">隐私保护</a></li>
+					</ul>
+					<ul>
+						<h3><a href="">关于我们</a></h3>
+						<li><a href="">隐私保护</a></li>
+						<li><a href="">隐私保护</a></li>
+						<li><a href="">隐私保护</a></li>
+						<li><a href="">隐私保护</a></li>
+					</ul>
+					<ul>
+						<h3><a href="">关于我们</a></h3>
+						<li><a href="">隐私保护</a></li>
+						<li><a href="">隐私保护</a></li>
+						<li><a href="">隐私保护</a></li>
+						
+					</ul>
+					<ul>
+						<h3><a href="">关于我们</a></h3>
+						<li><a href="">隐私保护</a></li>
+						<li><a href="">隐私保护</a></li>
+						<li><a href="">隐私保护</a></li>
+						<li><a href="">隐私保护</a></li>
+						<li><a href="">隐私保护</a></li>
+					</ul>
+				</div>
+				<div class="after-sale_box_right">
+					<h3>400-0310-707</h3>
+					<p>
+						周一至周五 9:00-17:30 <br />
+						（仅收市话费）
+					</p>
+					<a href="">
+						24小时在线客服
+					</a>
+				</div>
+			</div>
+		</div>
+	
+	<!-------------------------版权----------------------------------->	
+		<div class="foot">
+	</body>
+	
+</html>
+<script src="jquery-1.11.1.min.js"></script>
+<script src="js/children.js"></script>
+<script src="cookie.js"></script>
+<script>
+	
+</script>
